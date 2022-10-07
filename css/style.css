@@ -35,8 +35,7 @@ h5,
 h6 {
   margin: 0;
 }
-ul,
-ol {
+ul {
   margin: 0;
   padding-left: 0;
 }
@@ -62,11 +61,30 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ====HEADER ====*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo-web {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -86,7 +104,20 @@ body {
   color: var(--black-logo-header);
 }
 
+.site-nav {
+  display: flex;
+  margin-left: 90px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,6 +132,19 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--acent);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item {
+  display: block;
+}
+
+.contact-item + .contact-item {
+  margin-left: 50px;
 }
 
 .header-tel,
@@ -123,11 +167,22 @@ body {
 }
 
 /* =============HERO=============== */
+.hero.section {
+  width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 200px;
+}
 .hero-title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 200px; */
+  width: 691px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title);
@@ -135,9 +190,18 @@ body {
 
 .hero {
   background-color: var(--hero-background);
+  /* margin-bottom: 94px; */
 }
 
 .button-hero {
+  min-width: 216px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+
+  border-radius: 4px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -152,6 +216,8 @@ body {
   color: var(--button-hero-title);
 }
 
+/* наші переваги */
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -165,7 +231,14 @@ body {
   margin: -1px;
 }
 
+.list-advanture {
+  display: flex;
+  gap: 30px;
+}
+
 .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
@@ -175,6 +248,9 @@ body {
 }
 
 .h2-index {
+  text-align: center;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -182,6 +258,8 @@ body {
 }
 
 .text {
+  /* margin-bottom: 10px; */
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -189,16 +267,33 @@ body {
   color: var(--paragraf);
 }
 
+.our-work {
+  display: flex;
+  gap: 30px;
+}
+
 /* <!-- Наша команда --> */
 .section-our-team {
   background-color: var(--bkg-section-our-team);
 }
+.team-container {
+  display: flex;
+  gap: 30px;
+}
 
 .card {
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
 .title-card {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;

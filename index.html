@@ -24,36 +24,41 @@
     <!-- Хедер -->
     <header>
       <div class="container">
-        <nav>
-          <a class="logo-header link" href="./index.html"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <ul class="list">
-            <li><a class="link nav-link current" href="./index.html">Студія</a></li>
-            <li><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link nav-link" href="">Контакти</a></li>
+        <div class="main-nav">
+          <nav class="header-nav">
+            <a class="logo-header link" href="./index.html"
+              ><span class="logo-web">Web</span>Studio</a
+            >
+            <ul class="list site-nav">
+              <li class="item"><a class="link nav-link current" href="./index.html">Студія</a></li>
+              <li class="item"><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="item"><a class="link nav-link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="list contact">
+            <li class="contact-item">
+              <a class="link header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-item">
+              <a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="list">
-          <li>
-            <a class="link header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <!-- мєін -->
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero section">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="button-hero" type="button">Замовити послугу</button>
       </section>
+
       <!-- Наші переваги -->
-      <section>
+      <section class="container section">
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="list">
+        <ul class="list list-advanture">
           <li>
             <h3 class="title">увага до деталей</h3>
             <p class="text">
@@ -79,9 +84,9 @@
         </ul>
       </section>
       <!-- Чим ми займаємося -->
-      <section>
+      <section class="container section">
         <h2 class="h2-index">Чим ми займаємося</h2>
-        <ul class="list">
+        <ul class="list our-work">
           <li>
             <img src="./images/img-printing.jpg" alt="набір тексту" width="370" />
           </li>
@@ -100,9 +105,9 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="section-our-team">
+      <section class="section-our-team section container">
         <h2 class="h2-index">Наша команда</h2>
-        <ul class="list">
+        <ul class="list team-container">
           <li>
             <div class="card">
               <img src="./images/team-card1.jpg" alt="фото Дем'яненко" width="270" />
