@@ -23,6 +23,8 @@
   --bkg-card-portfolio: #ffffff;
   --text-card-portfolio: #757575;
   --paragraf: #757575;
+  --border-heder: #ECECEC;
+
 }
 
 /*==== скидання стилів =====*/
@@ -70,6 +72,11 @@ body {
 }
 
 /* ====HEADER ====*/
+.heder-section{
+  border-bottom: 1px solid var(--border-heder);
+  width: 1600px;
+  margin: 0 auto;
+}
 
 .header-nav {
   display: flex;
@@ -275,6 +282,8 @@ body {
 /* <!-- Наша команда --> */
 .section-our-team {
   background-color: var(--bkg-section-our-team);
+  width: 1600px;
+  margin: 0 auto;
 }
 .team-container {
   display: flex;
@@ -311,7 +320,15 @@ body {
 
 /* ==================FOOTER================== */
 .footer {
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 60px;
   background-color: var(--footer-bkg);
+}
+
+.footer-section {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .logo-footer {
@@ -324,13 +341,16 @@ body {
   color: var(--white-logo-footer);
 }
 
-.logo-footer {
+.footer-adress{
+  margin-top: 20px;
+}
+/* .logo-footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-footer);
-}
+} */
 
 .fiz-adress {
   font-style: normal;
