@@ -176,15 +176,16 @@ body {
 .hero.section {
   width: 1600px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
-  margin-bottom: 30px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 200px; */
-  width: 691px;
+  margin-bottom: 30px;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -204,7 +205,7 @@ body {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   padding: 10px 32px;
 
   border-radius: 4px;
