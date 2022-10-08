@@ -23,8 +23,7 @@
   --bkg-card-portfolio: #ffffff;
   --text-card-portfolio: #757575;
   --paragraf: #757575;
-  --border-heder: #ECECEC;
-
+  --border-heder: #ececec;
 }
 
 /*==== скидання стилів =====*/
@@ -72,7 +71,7 @@ body {
 }
 
 /* ====HEADER ====*/
-.heder-section{
+.heder-section {
   border-bottom: 1px solid var(--border-heder);
   width: 1600px;
   margin: 0 auto;
@@ -238,7 +237,11 @@ body {
   margin: -1px;
 }
 
-.list-advanture {
+.section-benefits {
+  padding-top: 94px;
+}
+
+.list-benefits {
   display: flex;
   gap: 30px;
 }
@@ -341,7 +344,7 @@ body {
   color: var(--white-logo-footer);
 }
 
-.footer-adress{
+.footer-adress {
   margin-top: 20px;
 }
 /* .logo-footer {
