@@ -51,6 +51,11 @@ body {
   background-color: var(--body-background);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
 }
@@ -87,9 +92,6 @@ body {
 }
 
 .logo-web {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -172,13 +174,11 @@ body {
 }
 
 /* =============HERO=============== */
-.hero.section {
+/* .hero.section {
   width: 1600px;
   margin: 0 auto;
-  /* text-align: center; */
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+  text-align: center; */
+
 .hero-title {
   text-align: center;
   margin-left: auto;
@@ -196,12 +196,12 @@ body {
 
 .hero {
   background-color: var(--hero-background);
-  /* margin-bottom: 94px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .button-hero {
   min-width: 216px;
-  height: 50px;
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 200px; */
@@ -237,10 +237,6 @@ body {
   margin: -1px;
 }
 
-.section-benefits {
-  padding-top: 94px;
-}
-
 .list-benefits {
   display: flex;
   gap: 30px;
@@ -257,7 +253,7 @@ body {
   color: var(--title);
 }
 
-.h2-index {
+.sention-title {
   text-align: center;
   margin-bottom: 50px;
 
@@ -285,8 +281,6 @@ body {
 /* <!-- Наша команда --> */
 .section-our-team {
   background-color: var(--bkg-section-our-team);
-  width: 1600px;
-  margin: 0 auto;
 }
 .team-container {
   display: flex;
@@ -294,15 +288,18 @@ body {
 }
 
 .card {
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
+.card-subtitle {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .title-card {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -312,6 +309,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title);
 }
+
 .text-card {
   font-size: 16px;
   line-height: 1.19;
@@ -323,14 +321,8 @@ body {
 /* ==================FOOTER================== */
 .footer {
   padding-top: 60px;
-  padding-left: 215px;
   padding-bottom: 60px;
   background-color: var(--footer-bkg);
-}
-
-.footer-section {
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .logo-footer {
@@ -343,16 +335,13 @@ body {
   color: var(--white-logo-footer);
 }
 
-.footer-adress {
+.adress {
   margin-top: 20px;
 }
-/* .logo-footer {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--logo-footer);
-} */
+
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 .fiz-adress {
   font-style: normal;
@@ -397,7 +386,7 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-filter {
