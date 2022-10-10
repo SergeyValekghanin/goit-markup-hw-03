@@ -73,7 +73,7 @@ body {
 
 /* ====HEADER ====*/
 .heder-section {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-bottom: 1px solid var(--border-heder);
 }
 
