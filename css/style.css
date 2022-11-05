@@ -134,7 +134,6 @@ img {
 
 .current {
   color: var(--acent);
-}
 
 .nav-link:hover,
 .nav-link:focus {
